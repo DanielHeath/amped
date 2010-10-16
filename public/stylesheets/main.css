@@ -1,7 +1,7 @@
-body{min-width:1000px; background:#000;}
-h1 { font-family: 'Lobster', arial, serif; text-align: center; cursor: pointer; color:#fff;}
-p { font-family: 'Yanone Kaffeesatz', arial, serif; color:#fff;}
-
+body{min-width:1000px; background:#000;background: url('../images/space-bg-grad.png') top left repeat-x; font-family: Helvetica, sans-serif;
+}
+h1 {text-align: center; cursor: pointer; color:#fff;}
+h1.exhibitionTitle{font-size: 3em;}
 #person{min-width:1000px;
 position:absolute;
 top:380px;
@@ -11,23 +11,20 @@ z-index:5;}
 #thePerson{
 display:block;
 height:322px;
-width:157px;
 position:fixed;
-top:200px;
+top:100px;
 z-index:11;
 background: url('../images/spacecap.png') top left no-repeat;
-
 }
 
 .personContainer{
-	margin:0 auto;
 	overflow-y:hidden;
-	width:90px;}
+	width:157px; margin:0 auto;}
 	
 #back{
 	bottom:50px;
 color:#FFFFFF;
-font:14px "proxima-nova-1","proxima-nova-2",sans-serif;
+font:14px sans-serif;
 height:28px;
 padding-top:11px;
 position:fixed;
@@ -37,17 +34,20 @@ text-indent:30px;
 width:186px;
 z-index:2000;}
 
-.container{margin:0 auto;
-overflow:hidden;
+.container{
+
 position:relative;
-width:1000px;
-border:1px solid grey;
+width:300px;
 }
 
-.itemContent{display: none;}
+.itemContent{display: none; background:#fff; width:100%; left:0; top:-21px; color:#000; z-index:12; position: relative;}
+section.even .itemContent{float: right;}
 	
-	section{height:200px;}
+	section{margin-bottom: 1em;}
+	section.odd .container{background:#34adb5; margin-bottom: 1em; z-index:15;}
+	section.even .container{background:#e020a3; clear: both; float: right; margin-bottom: 1em;}
 	
-	#area1{ background-color: rgba(255,0,0,.5); }
-	#area2{ background-color: rgba(222,222,125,.5); }
-	#area3{ background-color: rgba(111,0,100,.5); }
+	#sect_196459{background: url('../images/stars1.png') top left no-repeat;}
+
+
+.num_tags{display: none;}

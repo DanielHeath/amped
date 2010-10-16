@@ -13,8 +13,22 @@
     // <![CDATA[
         $(document).ready(function(){
             $("h1").click(function(){
+				
+				$(".itemContent").removeClass("open")
 				$(".itemContent").hide();
-				$(this).toggleClass("open").next().toggle();
+				if($(this).hasClass("open"))
+				{
+					$(this).parent().parent().next().hide()
+					$('section').show();
+					$(this).removeClass("open");
+				}
+				else
+				{
+					$("section").hide();
+					$(this).parent().parent().parent().show();
+					$(this).parent().parent().next().show();
+					$(this).addClass("open")
+				}
               	//$(this).next(".itemContent").show();
             });
         });
@@ -34,21 +48,23 @@
 		$(function() {
 			$('body').append("<script src='http://search.twitter.com/search.json?q=%23powerhousemuseum&callback=twitter_search'></script\>")
 		})
-		
         // ]]>
       </script>
 </head>
 <body>
-	<div id="back"><a href="back">back</a></div>
+	<!--<div id="back"><a href="back">back</a></div>-->
 	<div id="person">
 		<div class="personContainer">
 			<div id="thePerson" class="personContainer">
 			</div>
 		</div>
 	</div>
-		<ul id="tweetstream">
+	<ul id="tweetstream">
 	</ul>
 	
+	
+	<h1 class="exhibitionTitle">Apollo Mission Exhibition</h1>
+
 <%= yield %>
 
 </body>
