@@ -7,6 +7,7 @@ gem 'builder'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'json_pure'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
