@@ -7,7 +7,8 @@ module ExhibitionHelper
     elsif value.is_a? Array
       render_array(name, value)
     elsif value =~ %r{http://images.powerhousemuseum.com}
-      "<img src='#{value}' alt='' />"
+      val = value.gsub('http://images.powerhousemuseum.com/images/zoomify/thumbs/', 'http://www.powerhousemuseum.com/images/zoomify/TLF_mediums/')
+      "<img src='#{val}' alt='' />"
     else
       "<span class='#{name}'>#{value.to_s}</span>"
     end
