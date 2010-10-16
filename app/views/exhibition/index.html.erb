@@ -3,8 +3,8 @@
 	<section class="item <%= (index % 2) == 1 ? "odd" : "even"%>" id="sect_<%= item['id'] %>" >
 		<div class="container">
 			<div id="item">
+				<img src="<%= item_image(item) %>" class="thumb"/>
 				<h1><%= item['title']%></h1>
-				
 			</div>
 		</div>
 		<div class="itemContent">

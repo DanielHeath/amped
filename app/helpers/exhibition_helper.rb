@@ -1,5 +1,12 @@
 
 module ExhibitionHelper
+  def item_image(item)
+    n = item['multimedia_detail']
+    n = n[0]
+    n = n['images']
+    n = n['thumbnail']
+    n = n['url']
+  end
   
   def render_powerhouse_content(name, value)
     if value.is_a? Hash

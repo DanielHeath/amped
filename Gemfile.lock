@@ -34,7 +34,7 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     i18n (0.4.1)
-    json (1.4.6)
+    json_pure (1.4.6)
     mail (2.2.7)
       activesupport (>= 2.3.6)
       mime-types
@@ -62,7 +62,6 @@ GEM
     rake (0.8.7)
     rest-client (1.6.1)
       mime-types (>= 1.16)
-    sqlite3-ruby (1.2.5)
     thor (0.14.3)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
@@ -73,7 +72,6 @@ PLATFORMS
 
 DEPENDENCIES
   builder
-  json
+  json_pure
   rails (= 3.0.1)
   rest-client
-  sqlite3-ruby
