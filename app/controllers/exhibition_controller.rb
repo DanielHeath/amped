@@ -1,15 +1,12 @@
 class ExhibitionController < ApplicationController
 
   def index
-    @exhibition_json = apollo_hash
-    @exhibition_json['items'].each do |item|
-      item['multimedia_detail'] = JSON.parse( powerhouse_api_get item['multimedia_uri'] )['multimedia']
-      item['item_detail'      ] = JSON.parse( powerhouse_api_get item['item_uri'      ] )['item']
-    end
-    @items = @exhibition_json['items']
-#    Rails.logger.debug "***************************"
-#    Rails.logger.debug @items.to_yaml
-#    Rails.logger.debug "***************************"
+    #@exhibition_json = apollo_hash
+    #@exhibition_json['items'].each do |item|
+    #  item['multimedia_detail'] = JSON.parse( powerhouse_api_get item['multimedia_uri'] )['multimedia']
+    #  item['item_detail'      ] = JSON.parse( powerhouse_api_get item['item_uri'      ] )['item']
+    #end
+    #@items = @exhibition_json['items']
   end
   
   def apollo_hash
