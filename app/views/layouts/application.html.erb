@@ -17,7 +17,24 @@
 				$(this).toggleClass("open").next().toggle();
               	//$(this).next(".itemContent").show();
             });
-          });
+        });
+
+		twitter_search = function(response) {
+			$(response.results).each(function(index, element) {
+				$("#tweetstream").append(
+					"<li><img src='" + 
+					element.profile_image_url + 
+					"'/><span class='username'>" + 
+					element.from_user + 
+					"</span><span class='tweet'>" + 
+					element.text + 
+					"</span></li>")
+			})
+		}
+		$(function() {
+			$('body').append("<script src='http://search.twitter.com/search.json?q=%23powerhousemuseum&callback=twitter_search'></script\>")
+		})
+		
         // ]]>
       </script>
 </head>
@@ -29,7 +46,9 @@
 			</div>
 		</div>
 	</div>
-
+		<ul id="tweetstream">
+	</ul>
+	
 <%= yield %>
 
 </body>
