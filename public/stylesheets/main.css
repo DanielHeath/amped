@@ -1,0 +1,53 @@
+body{min-width:1000px; background:#000;}
+h1 { font-family: 'Lobster', arial, serif; text-align: center; cursor: pointer; color:#fff;}
+p { font-family: 'Yanone Kaffeesatz', arial, serif; color:#fff;}
+
+#person{min-width:1000px;
+position:absolute;
+top:380px;
+width:100%;
+z-index:5;}
+
+#thePerson{
+display:block;
+height:322px;
+width:157px;
+position:fixed;
+top:200px;
+z-index:11;
+background: url('../images/spacecap.png') top left no-repeat;
+
+}
+
+.personContainer{
+	margin:0 auto;
+	overflow-y:hidden;
+	width:90px;}
+	
+#back{
+	bottom:50px;
+color:#FFFFFF;
+font:14px "proxima-nova-1","proxima-nova-2",sans-serif;
+height:28px;
+padding-top:11px;
+position:fixed;
+right:0;
+text-decoration:none;
+text-indent:30px;
+width:186px;
+z-index:2000;}
+
+.container{margin:0 auto;
+overflow:hidden;
+position:relative;
+width:1000px;
+border:1px solid grey;
+}
+
+.itemContent{display: none;}
+	
+	section{height:200px;}
+	
+	#area1{ background-color: rgba(255,0,0,.5); }
+	#area2{ background-color: rgba(222,222,125,.5); }
+	#area3{ background-color: rgba(111,0,100,.5); }

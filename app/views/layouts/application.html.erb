@@ -6,8 +6,31 @@
   <%= javascript_include_tag 'jquery' %>
   <%= csrf_meta_tag %>
 
+  <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript">
+    // <![CDATA[
+        $(document).ready(function(){
+            $("h1").click(function(){
+				$(".itemContent").hide();
+				$(this).toggleClass("open").next().toggle();
+              	//$(this).next(".itemContent").show();
+            });
+          });
+        // ]]>
+      </script>
 </head>
 <body>
-	<%= yield %>
+	<div id="back"><a href="back">back</a></div>
+	<div id="person">
+		<div class="personContainer">
+			<div id="thePerson" class="personContainer">
+			</div>
+		</div>
+	</div>
+
+<%= yield %>
+
 </body>
 </html>

@@ -1,11 +1,17 @@
 <article class="items" >
 <% @items.each do |item| %>
 	<section class="item" id="<%= item['id'] %>" >
-		
-		<span class="description" ><%= item['description'] %></span>
-		<span class="summary" ><%= item['summary'] %></span>
-		<div class="full-info">
-			<%= render_powerhouse_content('full info', item).html_safe %>
+		<div class="container">
+			<div id="item">
+				<h1><%= item['title']%></h1>
+				<div class="itemContent">
+					<span class="description" ><%= item['description'] %></span>
+					<span class="summary" ><%= item['summary'] %></span>
+					<div class="full-info">
+						<%= render_powerhouse_content('full info', item).html_safe %>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 <% end %>
