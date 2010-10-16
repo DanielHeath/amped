@@ -1,7 +1,7 @@
 <article class="items" >
-<% @items.each_with_index do |item, index| %>
+<% @items.reject{ |item| item["title"].blank? }.each_with_index do |item, index| %>
 	<section class="item <%= (index % 2) == 1 ? "odd" : "even"%>" id="sect_<%= item['id'] %>" >
-		<div class="container">
+                <div class="container">
 			<div id="item">
 				<img src="<%= item_image(item) %>" class="thumb"/>
 				<h1><%= item['title']%></h1>

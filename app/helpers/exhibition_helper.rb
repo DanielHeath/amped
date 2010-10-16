@@ -9,7 +9,7 @@ module ExhibitionHelper
     n = n['url']
   end
   
-  INCLUDED = ["description", "significance_statement"]
+  INCLUDED = ["significance_statement"]
   def render_powerhouse_content(name, value)
     if value.is_a? Hash
       render_hash(name, value) { |k, v| render_powerhouse_content(k, v) }
