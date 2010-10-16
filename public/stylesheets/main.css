@@ -42,9 +42,10 @@ width:300px;
 float:left;
 }
 
-.itemContent{display: none; background:#fff; width:100%; left:0; top:-16px; color:#000; z-index:12; position: relative; float:left; padding:30px;}
-.itemContent p.summary, .itemContent p {color:#333; display:block; font-size:1.2em; margin-top:14px;}
+.itemContent{display: none; background:#fff; width:96%; left:0; top:-16px; color:#000; z-index:12; position: relative; float:left; padding:30px;}
+.itemContent p.summary, .itemContent p {color:#333; display:block; font-size:1.2em; margin-top:14px; line-height:1.6em;}
 .itemContent p.description {font-size:1.4em; color:#000; display:block;}
+
 
 section.even .itemContent{float: right;}
 	
@@ -52,7 +53,9 @@ section.even .itemContent{float: right;}
 	section.odd .container{background:#34adb5; margin-bottom: 1em; z-index:15;}
 	section.even .container{background:#e020a3; clear: both; float: right; margin-bottom: 1em;}
 	
+	
 	#sect_196459{background: url('../images/stars1.png') top left no-repeat;}
 .thumb {width:85px; height:85px; float:left; margin-bottom:20px; margin-right:10px;}
+.icons {float:right; margin-left:30px; margin-bottom:50px;}
 
 .num_tags{display: none;}
