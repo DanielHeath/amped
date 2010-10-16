@@ -1,12 +1,13 @@
 body{min-width:1000px; background:#000;background: url('../images/space-bg-grad.png') top left repeat-x; font-family: Helvetica, sans-serif;
 }
-h1 {text-align: center; cursor: pointer; color:#fff;}
-h1.exhibitionTitle{font-size: 3em;}
+h1 { cursor: pointer; color:#fff; font-weight:normal; font-size:1.4em; }
+h1.exhibitionTitle{font-size: 3em; text-align: center}
 #person{min-width:1000px;
 position:absolute;
 top:380px;
 width:100%;
-z-index:5;}
+z-index:5;
+;}
 
 #thePerson{
 display:block;
@@ -35,19 +36,23 @@ width:186px;
 z-index:2000;}
 
 .container{
-
+padding:10px;
 position:relative;
 width:300px;
+float:left;
 }
 
-.itemContent{display: none; background:#fff; width:100%; left:0; top:-21px; color:#000; z-index:12; position: relative;}
+.itemContent{display: none; background:#fff; width:100%; left:0; top:-16px; color:#000; z-index:12; position: relative; float:left; padding:30px;}
+.itemContent p.summary, .itemContent p {color:#333; display:block; font-size:1.2em; margin-top:14px;}
+.itemContent p.description {font-size:1.4em; color:#000; display:block;}
+
 section.even .itemContent{float: right;}
 	
-	section{margin-bottom: 1em;}
+	section{margin-bottom: 1em; }
 	section.odd .container{background:#34adb5; margin-bottom: 1em; z-index:15;}
 	section.even .container{background:#e020a3; clear: both; float: right; margin-bottom: 1em;}
 	
 	#sect_196459{background: url('../images/stars1.png') top left no-repeat;}
-
+.thumb {width:85px; height:85px; float:left; margin-bottom:20px; margin-right:10px;}
 
 .num_tags{display: none;}
